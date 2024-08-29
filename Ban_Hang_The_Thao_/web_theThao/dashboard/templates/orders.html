@@ -1,0 +1,33 @@
+﻿{% extends "dashboard.html" %}
+{% block content %}
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">STT</th>
+            <th scope="col">Người dùng</th>
+            <th scope="col">ID</th>
+            <th scope="col">Tổng giá</th>
+            <th scope="col">Trạng thái</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    {% for order in orders %}
+    <tbody>
+        <tr>
+            <th scope="row">{{ forloop.counter }}</th>
+            <td>{{ order.user.full_name }}</td>
+            <td>{{ order.id }}</td>
+            <td>${{ order.get_total_price }}</td>
+            {% if order.status %}
+            <td class="text-success">Thành công</td>
+            {% else %}
+            <td class="text-danger">Đã hủy</td>
+            {% endif %}
+            <td><a href="{% url 'dashboard:order_detail' order.id %}" class="text-primary text-decoration-none">Chi tiết</a></td>
+        </tr>
+    </tbody>
+    {% endfor %}
+</table>
+
+
+{% endblock %}

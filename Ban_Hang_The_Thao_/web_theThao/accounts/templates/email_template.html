@@ -1,0 +1,14 @@
+{% load i18n %}{% autoescape off %}
+{% blocktranslate %}Bạn đang nhận email này vì bạn đã yêu cầu đặt lại mật khẩu cho tài khoản người dùng của bạn tại {{ site_name }}.{% endblocktranslate %}
+
+{% translate "Vui lòng truy cập vào trang sau và chọn mật khẩu mới:" %}
+{% block reset_link %}
+{{ protocol }}://{{ domain }}{% url 'accounts:password_reset_confirm' uidb64=uid token=token %}
+{% endblock %}
+{% translate 'Tên người dùng của bạn, trong trường hợp bạn đã quên:' %} {{ user.get_username }}
+
+{% translate "Cảm ơn bạn đã sử dụng trang web của chúng tôi!" %}
+
+{% blocktranslate %}Nhóm {{ site_name }}{% endblocktranslate %}
+
+{% endautoescape %}

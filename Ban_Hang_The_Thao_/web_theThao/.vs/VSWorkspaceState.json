@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\accounts",
+    "\\accounts\\templates",
+    "\\cart",
+    "\\cart\\migrations",
+    "\\orders",
+    "\\orders\\migrations",
+    "\\orders\\templates",
+    "\\shop",
+    "\\shop\\templates"
+  ],
+  "SelectedNode": "\\accounts\\templates\\email_template.html",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,16 @@
+﻿{% extends "base.html" %}
+
+{% block content %}
+<div class="col-md-2"></div>
+
+<div class="col-md-8 border rounded p-3">
+    <h3 class="text-muted">Số tiền đơn hàng của bạn là: ${{order.get_total_price}}</h3>
+    <hr>
+    <p><b>Bạn có muốn tiếp tục và thanh toán không?</b></p>
+    <a href="{% url 'cart:show_cart' %}" class="btn btn-danger">Quay lại Giỏ hàng</a>
+    <a href="{% url 'orders:create_order' %}" class="btn btn-outline-success">Tiếp tục và thanh toán</a>
+</div>
+
+<div class="col-md-2"></div>
+
+{% endblock %}

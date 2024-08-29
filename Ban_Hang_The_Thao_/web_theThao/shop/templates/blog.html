@@ -1,0 +1,189 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    .blog-list-articles .blog-item-image{
+        width: 30%; 
+        float: left;
+    }
+    img{
+        max-width: 100%;
+        vertical-align: middle;
+    }
+    .blog-list-articles .blog-item-title{
+        width: 70%; 
+        float: left; 
+        padding-left: 10px;
+    }
+</style>
+
+<div id="blog_template">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-6 col-sm-6 col-xs-6">	
+                <div class="row">									
+                    <ul class="col-xs-12 pd5 blog-list-articles lists-articles" id="list-articles">
+                        <li class="clearfix">
+                            <div class="blog-item-image">
+                                <a href="https://bigsport.vn/blogs/news/5-buoc-phuc-hoi-lat-co-chan-nhanh-va-hieu-qua"><img src="//file.hstatic.net/1000281067/article/b_19b3994b0bc04b19905618c97749b81e_large.jpg" alt="5 bước phục hồi lật cổ chân nhanh và hiệu quả"></a>
+                            </div>
+                            <div class="blog-item-title">
+                                <a style="color: black; background-color: aliceblue; font-family: 'Times New Roman', Times, serif; text-decoration: none;" href="https://bigsport.vn/blogs/news/5-buoc-phuc-hoi-lat-co-chan-nhanh-va-hieu-qua" title="5 bước phục hồi lật cổ chân nhanh và hiệu quả">
+                                    <h2>5 bước phục hồi lật cổ chân nhanh và hiệu quả</h2>
+                                </a>
+                                <p>
+                                    Ngày:16/03/2024 lúc 21:05PM
+                                </p>
+                                <div class="blog-content-short-description">Lật cổ chân hay bong gân cổ chân là vấn đề mà những bạn khi chơi thể thao rất "ngại" mắc phải. Nhưng chấn thương khi tham gia các hoạt...</div>
+                            </div>
+                        </li>
+                        <hr>
+                        
+                        
+                        
+                        
+                        
+                        <li class="clearfix">
+                            <div class="blog-item-image">
+                                <a href="https://bigsport.vn/blogs/news/5-cach-tang-chieu-cao-hieu-qua"><img src="//file.hstatic.net/1000281067/article/ae_65250118bde84e54a02f0e61c3bff6fd_large.jpg" alt="5 Cách Tăng Chiều Cao Hiệu Quả"></a>
+                            </div>
+                            <div class="blog-item-title">
+                                <a style="color: black; background-color: aliceblue; font-family: 'Times New Roman', Times, serif; text-decoration: none;" href="https://bigsport.vn/blogs/news/5-cach-tang-chieu-cao-hieu-qua" title="5 Cách Tăng Chiều Cao Hiệu Quả">
+                                    <h2>5 Cách Tăng Chiều Cao Hiệu Quả</h2>
+                                </a>
+                                <p>
+                                    Ngày:06/03/2024 lúc 16:31PM
+                                </p>
+                                <div class="blog-content-short-description">Làm thế nào để tăng chiều cao hiệu quả?&nbsp;Chiều cao là vấn đề khiến các bạn trẻ ngày nay trở nên tự ti và không dám thể hiện bản thân....</div>
+                            </div>
+                        </li>
+                        <hr>
+                        
+                        
+                        
+                        
+                        
+                        <li class="clearfix">
+                            <div class="blog-item-image">
+                                <a href="https://bigsport.vn/blogs/news/se-ra-sao-neu-ban-choi-the-thao-30-phut-moi-ngay"><img src="//file.hstatic.net/1000281067/article/the_thao_0a0d88d886194cd6927dc77f1f09e3ed_large.jpg" alt="Sẽ ra sao nếu bạn chơi thể thao 30 phút mỗi ngày?"></a>
+                            </div>
+                            <div class="blog-item-title">
+                                <a style="color: black; background-color: aliceblue; font-family: 'Times New Roman', Times, serif; text-decoration: none;" href="https://bigsport.vn/blogs/news/se-ra-sao-neu-ban-choi-the-thao-30-phut-moi-ngay" title="Sẽ ra sao nếu bạn chơi thể thao 30 phút mỗi ngày?">
+                                    <h2>Sẽ ra sao nếu bạn chơi thể thao 30 phút mỗi ngày?</h2>
+                                </a>
+                                <p>
+                                    Ngày:28/02/2024 lúc 10:39AM
+                                </p>
+                                <div class="blog-content-short-description">Rèn luyện sức khỏe bằng việc chơi thể thao mỗi ngày&nbsp;không chỉ giúp con người nâng cao thể trạng mà còn phòng ngừa được nhiều bệnh lý nguy hiểm, kéo...</div>
+                            </div>
+                        </li>
+                        <hr>
+                        
+                        
+                        
+                        
+                        
+                        <li class="clearfix">
+                            <div class="blog-item-image">
+                                <a href="https://bigsport.vn/blogs/news/bayern-co-nguy-co-trang-tay-o-mua-giai-nay"><img src="//file.hstatic.net/1000281067/article/z5172322303691_1197a4aceffd783d3d81692952df3162_04908c8a17394a90b08919e905b4fe59_large.jpg" alt="Bayern Munich có nguy cơ trắng tay ở mùa giải này?"></a>
+                            </div>
+                            <div class="blog-item-title">
+                                <a style="color: black; background-color: aliceblue; font-family: 'Times New Roman', Times, serif; text-decoration: none;" href="https://bigsport.vn/blogs/news/bayern-co-nguy-co-trang-tay-o-mua-giai-nay" title="Bayern Munich có nguy cơ trắng tay ở mùa giải này?">
+                                    <h2>Bayern Munich có nguy cơ trắng tay ở mùa giải này?</h2>
+                                </a>
+                                <p>
+                                    Ngày:19/02/2024 lúc 11:16AM
+                                </p>
+                                <div class="blog-content-short-description">Bước vào trận đấu với tâm thế vô cùng lớn để lấy lại tinh thần vì các thất bại gần đây. Đoàn quân của HLV Tuchel đã kiểm soát trận...</div>
+                            </div>
+                        </li>
+                        <hr>
+                        
+                        
+                        
+                        
+                        
+                        <li class="clearfix">
+                            <div class="blog-item-image">
+                                <a href="https://bigsport.vn/blogs/news/vu-thi-trang-chinh-thuc-la-dai-su-thuong-hieu-cua-kamito"><img src="//file.hstatic.net/1000281067/article/ao-cau-long-kamito-vtt-gowo-special-xanh-hong-h7_c7afdc072f6f4208aa8c7e5a9811083b_large.jpg" alt="Vũ Thị Trang chính thức là đại sự thương hiệu của Kamito"></a>
+                            </div>
+                            <div class="blog-item-title">
+                                <a style="color: black; background-color: aliceblue; font-family: 'Times New Roman', Times, serif; text-decoration: none;" href="https://bigsport.vn/blogs/news/vu-thi-trang-chinh-thuc-la-dai-su-thuong-hieu-cua-kamito" title="Vũ Thị Trang chính thức là đại sự thương hiệu của Kamito">
+                                    <h2>Vũ Thị Trang chính thức là đại sự thương hiệu của Kamito</h2>
+                                </a>
+                                <p>
+                                    Ngày:16/01/2024 lúc 08:31AM
+                                </p>
+                                <div class="blog-content-short-description">Vũ Thị Trang bước theo chồng&nbsp;mình Nguyễn Tiến Minh để làm&nbsp;đại sự thương hiệu cho hãng thể thao nỗi tiếng tại Việt Nam -&nbsp;KamitoSau sự thành công vuợt bậc của...</div>
+                            </div>
+                        </li>
+                        <hr>
+                        
+                        
+                        
+                        
+                        
+                        <li class="clearfix">
+                            <div class="blog-item-image">
+                                <a href="https://bigsport.vn/blogs/news/gang-thu-mon-co-xuong"><img src="//file.hstatic.net/1000281067/article/gang-thu-mon-iwin-keepa-a-xanh-ngoc-h3_31a2d4607d46401b8fe33d5e439a9227_large.jpg" alt="Ưu điểm của găng tay thủ môn có xương"></a>
+                            </div>
+                            <div class="blog-item-title">
+                                <a style="color: black; background-color: aliceblue; font-family: 'Times New Roman', Times, serif; text-decoration: none;" href="https://bigsport.vn/blogs/news/gang-thu-mon-co-xuong" title="Ưu điểm của găng tay thủ môn có xương">
+                                    <h2>Ưu điểm của găng tay thủ môn có xương</h2>
+                                </a>
+                                <p>
+                                    Ngày:31/10/2023 lúc 13:16PM
+                                </p>
+                                <div class="blog-content-short-description">Đặc điểm của găng&nbsp;thủ môn có xương.Găng tay thủ môn có xương bảo vệ là loại găng có phần xương được thiết kế thêm bên trong găng.&nbsp;Vị trị đặt thanh...</div>
+                            </div>
+                        </li>
+                        <hr>
+                        
+                        
+                        
+                        
+                        
+                        <li class="clearfix">
+                            <div class="blog-item-image">
+                                <a href="https://bigsport.vn/blogs/news/giay-da-banh-pan-thai-co-thuc-su-da-hay"><img src="//file.hstatic.net/1000281067/article/giay-pan-patriot-evo-pod_db8d374924bd4acfbe61f33f16c06290_large.jpg" alt="Giày đá banh Pan Thái có thực sự đá hay"></a>
+                            </div>
+                            <div class="blog-item-title">
+                                <a style="color: black; background-color: aliceblue; font-family: 'Times New Roman', Times, serif; text-decoration: none;" href="https://bigsport.vn/blogs/news/giay-da-banh-pan-thai-co-thuc-su-da-hay" title="Giày đá banh Pan Thái có thực sự đá hay">
+                                    <h2>Giày đá banh Pan Thái có thực sự đá hay</h2>
+                                </a>
+                                <p>
+                                    Ngày:08/10/2023 lúc 11:28AM
+                                </p>
+                                <div class="blog-content-short-description">Giày đá banh Pan Thái có mặt tại Việt Nam khi nàoGiày đá banh Pan Thái được gia nhập vào thị trường Việt Nam năm 2015 và đã trở thành...</div>
+                            </div>
+                        </li>
+                        <hr>
+                        
+                        
+                        
+                        
+                        
+                        <li class="clearfix">
+                            <div class="blog-item-image">
+                                <a href="https://bigsport.vn/blogs/news/co-nen-chon-quan-ao-the-thao-thuong-hieu-viet-gia-re-de-mac"><img src="//file.hstatic.net/1000281067/article/ao-cau-long-nu-proning-3697-xanh-navy-h2_abaf9b1a3cba40e890e78fa0211aaadc_large.jpg" alt="Có nên chọn quần áo thể thao thương hiệu Việt Nam để mặc?"></a>
+                            </div>
+                            <div class="blog-item-title">
+                                <a style="color: black; background-color: aliceblue; font-family: 'Times New Roman', Times, serif; text-decoration: none;" href="https://bigsport.vn/blogs/news/co-nen-chon-quan-ao-the-thao-thuong-hieu-viet-gia-re-de-mac" title="Có nên chọn quần áo thể thao thương hiệu Việt Nam để mặc?">
+                                    <h2>Có nên chọn quần áo thể thao thương hiệu Việt Nam để mặc?</h2>
+                                </a>
+                                <p>
+                                    Ngày:27/09/2023 lúc 12:24PM
+                                </p>
+                                <div class="blog-content-short-description">Quần áo thể thao thương hiệu Việt giá rẻ có tốt không?&nbsp;Đây có lẻ là thắc mắc của khá nhiều người đặc biệt là những ai chơi thể thao thường...</div>
+                            </div>
+                        </li>
+                        <hr>               
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

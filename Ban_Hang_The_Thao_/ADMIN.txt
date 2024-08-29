@@ -1,0 +1,8 @@
+http://127.0.0.1:8000/accounts/login/manager
+link vào trang admin
+----
+tài khoản: admin@gmail.com
+mk:123456
+----
+tài khoản test kh: 123@gmail.com
+mk:123

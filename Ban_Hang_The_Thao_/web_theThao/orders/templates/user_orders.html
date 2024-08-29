@@ -1,0 +1,39 @@
+﻿{% extends "base.html" %}
+
+{% block content %}
+
+{% if orders %}
+{% for order in orders %}
+<div class="col-md-7 mb-4 border rounded p-3">
+    <!-- Mã đơn hàng ở phía bên phải -->
+    <b style="float: right;">Mã Đơn Hàng: {{ order.id }}</b>
+    <!-- Trạng thái thanh toán của đơn hàng -->
+    {% if order.status %}
+    <h4><b class="text-success">Thành công</b></h4>
+    {% else %}
+    <h3><b class="text-danger">Đã hủy</b></h3>
+    {% endif %}
+    <div class="text-muted border-top pt-2"></div>
+    {% for item in order.items.all  %}
+    <div class="border-bottom p-2">
+        <p>Sản phẩm: <a class="text-decoration-none" href="{{ item.product.get_absolute_url }}">{{item.product.title}}</a></p>
+        <p>Giá: ${{item.price}}</p>
+        <p>Số lượng: {{item.quantity}}</p>
+    </div>
+    {% endfor %}
+    <b>Tổng giá: ${{ order.get_total_price }}</b>
+</div>
+{% endfor %}
+{% else %}
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 mt-5 pt-5 text-center">
+        <br>
+        <h3 class="text-muted text-capitalize">Danh sách đơn hàng trống..!</h3>
+        <a href="/" class="text-primary text-decoration-none">Quay lại</a>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+{% endif %}
+
+{% endblock %}
